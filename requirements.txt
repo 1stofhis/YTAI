@@ -1,0 +1,7 @@
+openai>=1.0.0
+elevenlabs==0.2.12
+moviepy>=1.0.3
+google-api-python-client>=2.0.0
+beautifulsoup4>=4.0.0
+requests>=2.0.0
+python-dotenv>=1.0.0
