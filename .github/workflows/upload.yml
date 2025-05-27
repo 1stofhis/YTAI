@@ -1,0 +1,11 @@
+name: Daily YouTube Upload
+on:
+  schedule:
+    - cron: '0 12 * * *'  # Runs at noon UTC daily
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: pip install -r requirements.txt
+      - run: python main.py
