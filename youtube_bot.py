@@ -46,7 +46,7 @@ script = openai.ChatCompletion.create(
     messages=[{"role": "user", "content": "Write a YouTube script about..."}]
 ).choices[0].message.content
 # ===== 1. First generate your script with ChatGPT =====
-script = "Hey everyone, welcome back to the channel!
+script = """Hey everyone, welcome back to the channel!
 Today, we’re diving into something everyone’s asking:
 "How do I make real money online in 2025?"
 Not scams. Not get-rich-quick schemes. Just real, proven methods you can start today — no matter where you live.
@@ -162,7 +162,7 @@ Let the internet work for you. 🌍💻
 If you found this helpful, drop a like, hit subscribe, and let me know in the comments:
 Which method are YOU starting with today?
 
-Catch you in the next one!"  # From your OpenAI code
+Catch you in the next one!"""  # From your OpenAI code
 
 # ===== 2. ElevenLabs Text-to-Speech =====
 from elevenlabs.client import ElevenLabs
