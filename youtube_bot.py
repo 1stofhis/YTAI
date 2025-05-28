@@ -366,6 +366,6 @@ if __name__ == "__main__":
     # Step 4: Upload to YouTube
     print("4. Uploading to YouTube...")
     if not upload_video():
-        exit()
+        reupload()
     
     print("\n=== Process completed successfully! ===")
