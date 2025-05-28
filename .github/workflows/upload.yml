@@ -1,4 +1,6 @@
 name: Daily YouTube Upload
+permissions:
+  contents: read
 on:
   schedule:
     - cron: '0 12 * * *'  # Runs at noon UTC daily
